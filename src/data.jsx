@@ -2,6 +2,8 @@ import { nanoid } from "nanoid"
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from "react-icons/fa"
 import { SiNextdotjs, SiBootstrap, SiTailwindcss, SiTypescript, SiMongodb, SiPostgresql, SiExpress, 
          SiPostman, SiGooglechrome } from "react-icons/si"
+import { DiJava } from "react-icons/di";
+
 import { VscCode } from "react-icons/vsc";
 import my_portfolio from "./assets/my_portfolio.png"
 import simongame from "./assets/simongame.png";
@@ -14,9 +16,10 @@ export const links = [
   { id: nanoid(), href: '#home', text: 'home' },
   { id: nanoid(), href: '#skills', text: 'skills' },
   { id: nanoid(), href: '#about', text: 'about' },
+  { id: nanoid(), href: '#certifications', text: 'certifications' },
   { id: nanoid(), href: '#projects', text: 'projects' },
   { id: nanoid(), href: resume, text: 'resume' },
-
+ 
 ];
 
 export const skills = [
@@ -82,7 +85,12 @@ export const skills = [
     icon: <SiExpress className="h-16 w-16 text-gray-700" />,
     text: "RESTful API development and middleware integration using Express.js.",
   },
-
+  {
+    id: nanoid(),
+    title: "Java",
+    icon: <DiJava className="h-16 w-16 text-gray-700" />,
+    text: "Java fundamentals and object-oriented programming (OOP) concepts.",
+  },
   
   {
     id: nanoid(),
@@ -160,3 +168,23 @@ export const projects = [
   },
 ];
 
+export const certifications = [
+  {
+    id: nanoid(),
+    url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-45f0ba82-d7ae-4180-b086-a2fb157dbc2f.jpg ',
+    title: 'Full Stack Web Development Course – Udemy',
+    text: 'Trained in frontend, backend, and database development using HTML, CSS, JavaScript, React, Node.js, Express, and PostgreSQL.',
+  },
+  {
+    id: nanoid(),
+    url: 'https://ude.my/UC-e2df2fb0-0948-4495-bd63-92f07f2bd24d ',
+    title: 'Complete React, Next.js & TypeScript Projects Course 2025 – Udemy ',
+    text: 'Built practical projects with React, Next.js, and TypeScript, focusing on type safety, routing, and API integration.',
+  },
+  {
+    id: nanoid(),
+    url: 'https://www.udemy.com/certificate/UC-2d677614-f257-44ad-974e-86e221d194b3/',
+    title: 'Java Programming For Complete Beginners [2025] – Udemy ',
+    text: 'Learned Java fundamentals and OOP concepts with hands-on coding and beginner-friendly projects.',
+  }
+];
