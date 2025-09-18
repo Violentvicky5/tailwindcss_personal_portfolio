@@ -7,9 +7,9 @@ const Navbar = () => {
            <h2 className='text-3xl font-bold '>personal <span className='text-emerald-600 ' >portfolio</span></h2>
       
        
-        <div className='flex gap-x-3'>{links.map((link)=>{
+        <div className='flex flex-wrap gap-x-1 gap-y-1 sm:gap-x-4 mt-2 sm:mt-0'>{links.map((link)=>{
             const {id,href,text} = link
-            return <a key={id} href={href} className='capitalize text-lg tracking-wide hover:bg-emerald-600 duration-300'>
+            return <a key={id} href={href} className='capitalize text-lg tracking-wide  hover:bg-emerald-600 duration-300'>
                 {text}
             </a>
         })}</div>
