@@ -9,7 +9,11 @@ import my_portfolio from "./assets/my_portfolio.png"
 import simongame from "./assets/simongame.png";
 import calculator from "./assets/calculator.png";
 import qrcode from "./assets/qrcode.png";
+import easylife from "./assets/easylife.png"
+import e_com from "./assets/e_com.png"
+import productM from "./assets/productM.png"
 import resume from "./assets/resume.pdf"
+
 
 
 export const links = [
@@ -166,6 +170,31 @@ export const projects = [
     title: 'QR Code Generator',
     text: 'Dynamic QR code generator built using Node.js and Express.js for creating QR codes instantly.',
   },
+   {
+    id: nanoid(),
+    img: easylife,  
+    url: 'https://easylife-project-lc8cqohab.vercel.app',  
+    github: 'https://github.com/Violentvicky5', 
+    title: 'Hospital Management',
+    text: 'Hospital management application - time management and patient history management -built using next.js and TypeScript- ',
+  },
+  {
+    id: nanoid(),
+    img: e_com,  
+    url: 'https://e-commerce-website-f85gck810.vercel.app',  
+    github: 'https://github.com/Violentvicky5', 
+    title: 'E Commerce UI Application ',
+    text: 'E commerce website- built using HTML5, CSS, Bootstrap',
+  },
+   {
+    id: nanoid(),
+    img: productM,  
+    url: 'https://user-product-management-beta.vercel.app/ ',  
+    github: 'https://github.com/Violentvicky5', 
+    title: 'User and Product Management Application',
+    text: 'Web Application- this allows to create, update, remove, search, filter and sort the user or products - built using HTML5, CSS, Bootstrap and JavaScript',
+  },
+
 ];
 
 export const certifications = [

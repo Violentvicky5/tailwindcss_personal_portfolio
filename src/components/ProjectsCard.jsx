@@ -1,4 +1,5 @@
 import React from 'react'
+import { SiVercel } from 'react-icons/si';
 import { FaGitSquare, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 
@@ -22,6 +23,10 @@ const ProjectsCard = ({url, img, github,title,text})=> {
       <a href={github}>
         <FaGitSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300'/>
       </a>
+      <a href={url}>
+        <SiVercel className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+      </a>
+      
     </div>
   </div>
 </article>
